@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inventario</title>
+</head>
+<body>
+    <h1>Inventario</h1>
+
+    <div class="container">
+        <form id="formulario-agregar" action="#">
+            <header>
+                <h2>Agregar producto</h2>
+            </header>
+            <div>
+                <label for="nombre">Nombre del producto:</label>
+                <input id="nombre" type="text">
+            </div>
+            <div>
+                <label for="descripcion">Descripcion del producto:</label>
+                <input id="descripcion" type="text">
+            </div>
+            <div>
+                <label for="cantidad">Cantidad de producto:</label>
+                <input id="cantidad" type="text">
+            </div>
+            <div>
+                <label for="costo">Costo del prodcuto:</label>
+                <input id="costo" type="text">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+
+        <div id="mensaje1">
+        </div>
+    </div>
+    <div class="container">
+        <form action="#" id="formulario-borrar">
+            <header>
+                <h2>Eliminar producto</h2>
+            </header>
+            <div>
+                <label for="codigoBorrar">Codigo de producto a borrar:</label>
+                <input id="codigoBorrar" type="text">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Borrar</button>
+        </form>
+    </div>
+    <div class="container">
+        <form action="#" id="formulario-buscar">
+            <header>
+                <h2>Buscar producto</h2>
+            </header>
+            <div>
+                <label for="codigoBuscar">Codigo de producto a buscar:</label>
+                <input id="codigoBuscar" type="text">
+                
+            </div>
+
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+    </div>
+    <div id="productos" class="container">
+        <h3>Listado de productos</h3>
+        <ul id="listado-productos">
+        </ul>
+        <button id="btn1">Listar productos</button>
+        <button id="btn2">Listar productos de manera inversa</button>
+    </div><br>
+</body>
+    <script src="main.js" type="module"></script>
+</html>
